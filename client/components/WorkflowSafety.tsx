@@ -100,7 +100,7 @@ export default function WorkflowSafety() {
         <div className="bg-gray-50 rounded-2xl p-8 mb-16">
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
             <img
-              src="/WorkflowGuard Workflow History (1).png"
+              src="/Workflow History (1).png"
               alt="WorkflowGuard Workflow History interface showing Customer Onboarding workflow with detailed version history, snapshots, and change tracking"
               className="w-full h-auto"
             />
