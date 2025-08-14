@@ -52,7 +52,7 @@ export default function Hero() {
               </div>
               <div className="bg-gray-50 rounded-lg overflow-hidden">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Ffe4464dadbca415cbe1a78d74f0e913a%2Fbd208d7d6e4e448287730175350d9676?format=webp&width=800"
+                  src="/WorkflowGuard Dashboard (1).png"
                   alt="WorkflowGuard Dashboard Overview showing workflow monitoring interface with active workflows, uptime metrics, and workflow management features"
                   className="w-full h-auto"
                 />
