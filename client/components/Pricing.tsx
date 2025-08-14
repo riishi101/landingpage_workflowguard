@@ -47,62 +47,61 @@ export default function Pricing() {
   }, []);
   const plans = [
     {
-      name: "Basic",
+      name: "Starter Plan",
       usdPrice: 19,
-      period: "/m",
-      description:
-        "Perfect for small teams getting started with workflow monitoring",
+      period: "/month",
+      description: "For individuals and small teams getting started with workflow protection.",
       features: [
-        "Up to 10 workflows",
-        "Basic monitoring",
-        "Email notifications",
-        "24/7 support",
-        "Basic analytics",
-        "Workflow backup",
+        "Up to 10 workflows protected",
+        "Workflow selection",
+        "Dashboard overview",
+        "Basic version history (30 days)",
+        "Manual backups only",
+        "Basic rollback",
+        "Simple comparison of versions",
+        "Email support",
       ],
       buttonText: "Get Started",
       buttonVariant: "outline" as const,
       popular: false,
     },
     {
-      name: "Pro",
+      name: "Professional Plan",
       usdPrice: 49,
-      period: "/m",
-      description:
-        "Advanced features for growing teams that need comprehensive monitoring",
+      period: "/month",
+      description: "For growing businesses that need comprehensive protection and history.",
       features: [
-        "Up to 100 workflows",
-        "Advanced monitoring",
-        "Real-time notifications",
-        "Priority support",
-        "Advanced analytics",
-        "Workflow backup & recovery",
-        "Custom integrations",
-        "Performance optimization",
+        "Up to 35 workflows protected",
+        "Enhanced dashboard",
+        "Complete version history (90 days)",
+        "Automated backups",
+        "Change notifications",
+        "Advanced rollback",
+        "Side-by-side version comparison",
+        "Compliance reporting",
+        "Audit trails",
+        "Priority WhatsApp support",
       ],
-      buttonText: "Start Free Trial",
+      buttonText: "Start 21-Day Free Trial",
       buttonVariant: "default" as const,
       popular: true,
     },
     {
-      name: "Team",
+      name: "Enterprise Plan",
       usdPrice: 99,
-      period: "/m",
-      description:
-        "Enterprise-grade solution for large teams with complex workflow needs",
+      period: "/month",
+      description: "For large organizations requiring advanced security and unlimited scale.",
       features: [
-        "Unlimited workflows",
-        "Enterprise monitoring",
-        "Custom notifications",
-        "Dedicated support",
-        "Custom analytics",
-        "Advanced backup & recovery",
-        "Enterprise integrations",
-        "Priority optimization",
-        "White-label options",
-        "SLA guarantee",
+        "Unlimited workflows protected",
+        "Real-time change notifications",
+        "Approval workflows",
+        "Advanced compliance reporting",
+        "Complete audit trails",
+        "Custom retention policies",
+        "Advanced security features",
+        "24/7 WhatsApp support",
       ],
-      buttonText: "Get Started",
+      buttonText: "Contact Sales",
       buttonVariant: "outline" as const,
       popular: false,
     },
@@ -256,7 +255,7 @@ export default function Pricing() {
 
         <div className="text-center mt-16">
           <p className="text-gray-600 mb-4">
-            All plans include a 14-day free trial. No credit card required.
+            The Professional plan includes a 21-day free trial. No credit card required.
           </p>
           <div className="flex flex-wrap justify-center items-center gap-6 text-sm text-gray-500">
             <span>✓ Cancel anytime</span>
