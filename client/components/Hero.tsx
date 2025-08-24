@@ -21,13 +21,20 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16">
-            <Button
-              size="lg"
-              className="bg-workflowguard-purple hover:bg-workflowguard-purple/90 text-white px-8 py-4 text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+            <a
+              href="https://app-na2.hubspot.com/oauth/authorize?client_id=5e6a6429-8317-4e2a-a9b5-46e8669f72f6&redirect_uri=https://api.workflowguard.pro/api/auth/hubspot/callback&scope=automation%20oauth"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'none' }}
             >
-              Start Free Trial
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+              <Button
+                size="lg"
+                className="bg-workflowguard-purple hover:bg-workflowguard-purple/90 text-white px-8 py-4 text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+              >
+                Start Free Trial
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
 
             <Button
               variant="outline"

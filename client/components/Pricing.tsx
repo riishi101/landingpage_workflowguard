@@ -236,19 +236,42 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              <Button
-                className={`w-full ${
-                  plan.popular
-                    ? "bg-white text-workflowguard-purple hover:bg-gray-100"
-                    : plan.buttonVariant === "outline"
-                      ? "border-gray-300 text-gray-700 hover:bg-gray-50"
-                      : "bg-workflowguard-purple text-white hover:bg-workflowguard-purple/90"
-                }`}
-                variant={plan.popular ? "default" : plan.buttonVariant}
-                size="lg"
-              >
-                {plan.buttonText}
-              </Button>
+              {(plan.buttonText === "Get Started" || plan.buttonText === "Start 21-Day Free Trial") ? (
+                <a
+                  href="https://app-na2.hubspot.com/oauth/authorize?client_id=5e6a6429-8317-4e2a-a9b5-46e8669f72f6&redirect_uri=https://api.workflowguard.pro/api/auth/hubspot/callback&scope=automation%20oauth"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: 'none' }}
+                >
+                  <Button
+                    className={`w-full ${
+                      plan.popular
+                        ? "bg-white text-workflowguard-purple hover:bg-gray-100"
+                        : plan.buttonVariant === "outline"
+                          ? "border-gray-300 text-gray-700 hover:bg-gray-50"
+                          : "bg-workflowguard-purple text-white hover:bg-workflowguard-purple/90"
+                    }`}
+                    variant={plan.popular ? "default" : plan.buttonVariant}
+                    size="lg"
+                  >
+                    {plan.buttonText}
+                  </Button>
+                </a>
+              ) : (
+                <Button
+                  className={`w-full ${
+                    plan.popular
+                      ? "bg-white text-workflowguard-purple hover:bg-gray-100"
+                      : plan.buttonVariant === "outline"
+                        ? "border-gray-300 text-gray-700 hover:bg-gray-50"
+                        : "bg-workflowguard-purple text-white hover:bg-workflowguard-purple/90"
+                  }`}
+                  variant={plan.popular ? "default" : plan.buttonVariant}
+                  size="lg"
+                >
+                  {plan.buttonText}
+                </Button>
+              )}
             </div>
           ))}
         </div>

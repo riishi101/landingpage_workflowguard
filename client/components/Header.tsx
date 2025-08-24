@@ -47,12 +47,19 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <Button
-              variant="default"
-              className="bg-workflowguard-purple hover:bg-workflowguard-purple/90 text-white px-6 transition-all duration-200 shadow-lg hover:shadow-xl"
+            <a
+              href="https://app-na2.hubspot.com/oauth/authorize?client_id=5e6a6429-8317-4e2a-a9b5-46e8669f72f6&redirect_uri=https://api.workflowguard.pro/api/auth/hubspot/callback&scope=automation%20oauth"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'none' }}
             >
-              Get Started
-            </Button>
+              <Button
+                variant="default"
+                className="bg-workflowguard-purple hover:bg-workflowguard-purple/90 text-white px-6 transition-all duration-200 shadow-lg hover:shadow-xl"
+              >
+                Get Started
+              </Button>
+            </a>
           </div>
         </div>
       </div>
