@@ -9,10 +9,5 @@
       "source": "/(.*)",
       "destination": "/index.html"
     }
-  ],
-  "functions": {
-    "netlify/functions/api.ts": {
-      "runtime": "nodejs18.x"
-    }
-  }
+  ]
 }
