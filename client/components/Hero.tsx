@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -36,13 +37,15 @@ export default function Hero() {
               </Button>
             </a>
 
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-workflowguard-purple text-workflowguard-purple hover:bg-workflowguard-purple hover:text-white px-8 py-4 text-lg transition-all duration-200"
-            >
-              Learn More
-            </Button>
+            <Link to="/documentation">
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-workflowguard-purple text-workflowguard-purple hover:bg-workflowguard-purple hover:text-white px-8 py-4 text-lg transition-all duration-200"
+              >
+                Learn More
+              </Button>
+            </Link>
           </div>
 
           <div className="bg-workflowguard-light-purple/20 rounded-2xl p-8 max-w-5xl mx-auto">
