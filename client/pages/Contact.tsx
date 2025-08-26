@@ -112,7 +112,9 @@ export default function Contact() {
                 </h3>
                 <p className="text-gray-600 mb-1">Live chat:</p>
                 <a
-                  href="#"
+                  href="https://wa.me/14155238886"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-workflowguard-purple hover:underline"
                 >
                   WhatsApp
