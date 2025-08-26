@@ -97,7 +97,7 @@ export default function Contact() {
                   href="mailto:contact@workflowguard.org"
                   className="text-workflowguard-purple hover:underline"
                 >
-                  contact@workflowguard.org
+                  contact@workflowguard.pro
                 </a>
               </div>
             </div>
@@ -112,12 +112,12 @@ export default function Contact() {
                 </h3>
                 <p className="text-gray-600 mb-1">Live chat:</p>
                 <a
-                  href="https://wa.me/14155238886"
+                  href="https://wa.me/14155238886?text=Hi%20WorkflowGuard%20team!%20I%27m%20interested%20in%20your%20HubSpot%20workflow%20protection%20service.%20I%20found%20you%20through%20your%20landing%20page."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-workflowguard-purple hover:underline"
+                  className="text-workflowguard-purple hover:underline inline-flex items-center gap-1"
                 >
-                  WhatsApp
+                  💬 WhatsApp Live Chat
                 </a>
               </div>
             </div>
