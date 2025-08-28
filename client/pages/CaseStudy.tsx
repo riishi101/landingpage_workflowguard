@@ -279,6 +279,8 @@ export default function CaseStudy() {
                   "Trend graphs with hover details",
                   "Filter by team, tag, or integration",
                 ],
+                image: "/Web 1440 - 2.png",
+                imageAlt: "WorkflowGuard comprehensive monitoring dashboard showing workflow status and analytics"
               },
               {
                 title: "One‑Click Workflow Rollbacks",
@@ -288,6 +290,8 @@ export default function CaseStudy() {
                   "Inline change summary",
                   "Guardrails before destructive actions",
                 ],
+                image: "/Web 1440 - 5.png",
+                imageAlt: "Workflow rollback interface showing version control and restore options"
               },
               {
                 title: "Workflow Backups Timeline",
@@ -297,6 +301,8 @@ export default function CaseStudy() {
                   "Export to secure storage",
                   "Retention window with policy badges",
                 ],
+                image: "/Web 1440 - 3.png",
+                imageAlt: "Workflow backups timeline showing automated snapshot management"
               },
               {
                 title: "Alerts & Incident Details",
@@ -306,12 +312,14 @@ export default function CaseStudy() {
                   "Links to impacted objects",
                   "Collaborative notes for handoffs",
                 ],
+                image: "/Web 1440 - 4.png",
+                imageAlt: "Alerts and incident management interface with detailed context"
               },
             ].map((card, idx) => (
-              <div key={idx} className="rounded-2xl border border-gray-200 bg-gradient-to-br from-blue-50 to-white p-6 md:p-10">
-                <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 items-center ${idx % 2 === 1 ? 'md:[&>div:first-child]:order-2' : ''}`}>
+              <div key={idx} className="rounded-2xl border border-gray-200 bg-gradient-to-br from-workflowguard-purple/5 to-white p-6 md:p-10">
+                <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 items-center ${idx % 2 === 1 ? 'lg:[&>div:first-child]:order-2' : ''}`}>
                   <div>
-                    <div className="inline-flex items-center rounded-md bg-workflowguard-purple/10 text-workflowguard-purple px-2 py-1 text-xs font-medium">UI Preview</div>
+                    <div className="inline-flex items-center rounded-md bg-workflowguard-purple/10 text-workflowguard-purple px-2 py-1 text-xs font-medium">Live Screenshot</div>
                     <h3 className="mt-3 text-xl font-semibold text-gray-900">{card.title}</h3>
                     <p className="mt-2 text-gray-600">{card.desc}</p>
                     <ul className="mt-4 space-y-2 text-gray-700">
@@ -323,17 +331,12 @@ export default function CaseStudy() {
                       ))}
                     </ul>
                   </div>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="rounded-xl border border-workflowguard-purple/20 bg-white p-4 shadow-sm">
-                      <div className="h-3 w-3/4 rounded bg-workflowguard-purple/20" />
-                      <div className="mt-2 h-3 w-2/3 rounded bg-workflowguard-purple/20" />
-                      <div className="mt-4 h-24 rounded-lg bg-gradient-to-br from-workflowguard-purple/5 to-white border border-workflowguard-purple/20" />
-                    </div>
-                    <div className="rounded-xl border border-workflowguard-purple/20 bg-white p-4 shadow-sm">
-                      <div className="h-3 w-3/4 rounded bg-workflowguard-purple/20" />
-                      <div className="mt-2 h-3 w-2/3 rounded bg-workflowguard-purple/20" />
-                      <div className="mt-4 h-24 rounded-lg bg-gradient-to-br from-workflowguard-purple/5 to-white border border-workflowguard-purple/20" />
-                    </div>
+                  <div>
+                    <img
+                      src={card.image}
+                      alt={card.imageAlt}
+                      className="w-full rounded-xl border border-gray-200 shadow-lg"
+                    />
                   </div>
                 </div>
               </div>
@@ -394,11 +397,6 @@ export default function CaseStudy() {
               </div>
             </div>
             <div>
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Ffe4464dadbca415cbe1a78d74f0e913a%2Fc03c468662f74f378c2c36e1b0d243a2?format=webp&width=1200"
-                alt="Conclusion: Beyond an App, It's an Essential Partner"
-                className="w-full rounded-2xl border border-gray-200 shadow-lg"
-              />
             </div>
           </div>
         </div>
