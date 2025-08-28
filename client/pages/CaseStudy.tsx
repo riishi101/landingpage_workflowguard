@@ -376,28 +376,26 @@ export default function CaseStudy() {
       {/* Conclusion */}
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-8">
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-8 text-center">
             Conclusion: Beyond an App, It's an Essential Partner
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                WorkflowGuard transforms how teams approach HubSpot workflow management. What started as a personal solution to prevent costly automation failures has evolved into an essential tool that provides peace of mind and operational excellence.
-              </p>
-              <p className="text-gray-600 leading-relaxed mb-8">
-                The results speak for themselves: 95% downtime reduction, 40% efficiency gains, and complete backup coverage. But beyond the metrics, WorkflowGuard delivers something invaluable—the confidence to innovate and scale without fear of breaking critical automations.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {conclusion.map((item, idx) => (
-                  <div key={idx} className="flex items-start gap-2 rounded-lg border border-workflowguard-purple/20 bg-white p-4">
-                    <div className="w-2 h-2 rounded-full bg-workflowguard-purple mt-2 flex-shrink-0"></div>
-                    <span className="text-gray-700 text-sm">{item}</span>
-                  </div>
-                ))}
+          
+          <div className="text-center mb-12">
+            <p className="text-xl text-gray-600 leading-relaxed mb-6 max-w-4xl mx-auto">
+              WorkflowGuard transforms how teams approach HubSpot workflow management. What started as a personal solution to prevent costly automation failures has evolved into an essential tool that provides peace of mind and operational excellence.
+            </p>
+            <p className="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto">
+              The results speak for themselves: 95% downtime reduction, 40% efficiency gains, and complete backup coverage. But beyond the metrics, WorkflowGuard delivers something invaluable—the confidence to innovate and scale without fear of breaking critical automations.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {conclusion.map((item, idx) => (
+              <div key={idx} className="flex items-start gap-3 rounded-xl border border-workflowguard-purple/20 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-2 h-2 rounded-full bg-workflowguard-purple mt-2 flex-shrink-0"></div>
+                <span className="text-gray-700 leading-relaxed">{item}</span>
               </div>
-            </div>
-            <div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
